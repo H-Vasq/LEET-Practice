@@ -6,47 +6,7 @@
 <link rel="stylesheet" href="style.css">
 <body>
   <p id="display"></p>
-  <script >
-    var createCounter = function(init) {
-        let count = init;
-  
-        function increment() {
-          return ++count;
-        }
-  
-        function decrement() {
-          return --count;
-        }
-  
-        function reset() {
-          count = init;
-          return count;
-        }
-  
-        return {
-          increment: increment,
-          decrement: decrement,
-          reset: reset
-        };
-      };
-  
-      var counter = createCounter(25); // Initialize with 5
-
-    function printToScreen() {
-      // Collect results from increment, decrement, and reset
-      let incremented = counter.increment(); // 6
-      let decremented = counter.decrement(); // 5
-      let resetValue = counter.reset();      // 5
-
-      // Display all results together
-      document.getElementById('display').textContent = 
-        "Increment: " + incremented + "\n" +
-        "Decrement: " + decremented + "\n" +
-        "Reset: " + resetValue;
-    }
-
-    // Print the results on screen
-    printToScreen();
+  <script src="2635.js">
   </script>
 </body>
 </html>
